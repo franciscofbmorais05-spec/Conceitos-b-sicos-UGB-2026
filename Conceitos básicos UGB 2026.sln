@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36915.13 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Conceitos básicos UGB 2026", "Conceitos básicos UGB 2026\Conceitos básicos UGB 2026.csproj", "{AE8FD071-D724-431E-B873-F0A4FB6F1BC4}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{AE8FD071-D724-431E-B873-F0A4FB6F1BC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE8FD071-D724-431E-B873-F0A4FB6F1BC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE8FD071-D724-431E-B873-F0A4FB6F1BC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE8FD071-D724-431E-B873-F0A4FB6F1BC4}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {41725EED-4254-45A7-BEA0-477F5B16146D}
+	EndGlobalSection
+EndGlobal
