@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace ConceitosPOO
 {
-    public class Cliente
+    public class Agencia
     {
+        private int _numero;
         private string _nome;
-        private string _cpf;
+        private string _telefone;
 
         public string Nome
         {
@@ -18,29 +19,28 @@ namespace ConceitosPOO
             {
                 _nome = value;
             }
+
         }
 
-        public string Cpf
+        public string Telefone
         {
-            get
-            {
-                return _cpf;
-            }
+            get => _telefone;
             set
             {
-                if (value.Length == 11)
-                    _cpf = value;
-                else
-                    throw new Exception("O CPF deve ter exatamente 11 dígitos");
+                _telefone = value;
             }
         }
-        public Cliente(string nome, string cpf)
-        {
-            _nome = nome;
-            _cpf = cpf;
+        public int Numero { 
+            get => _numero; 
+            private set
+            {
+                _numero = value;
+            }
         }
-
+        public Agencia(int numero)
+        {
+            _numero = numero;
+        }
     }
-}
-   
 
+}
