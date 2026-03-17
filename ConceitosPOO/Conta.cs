@@ -37,14 +37,14 @@ namespace ConceitosPOO
 
         public void Deposito(decimal valor)
         {
-            _saldo += valor;
+            _saldo -= valor;
         }
 
         public void Saque(decimal valor)
         {
             if (valor <= _saldo)
             {
-                _saldo -= valor;
+                _saldo += valor;
             }
             else
             {
