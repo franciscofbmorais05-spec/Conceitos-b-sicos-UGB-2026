@@ -53,6 +53,24 @@ namespace TesteConceitosPOO
 
             Conta conta = new Conta(1111, saldoInicialconta);
             Conta conta2 = new Conta(2222, saldoInicialconta2);
+
+            //ação
+            conta.Transferencia(conta2, valorTransferencia);
+
+            //verificação
+            Assert.AreEqual(saldoEsperadoconta, conta.Saldo);
+            Assert.AreEqual(saldoEsperadoconta2, conta2.Saldo);
+        }
+
+        [TestMethod]
+        public void TestSaqueValoMenorQueZero()
+        {
+            decimal saldoInicial = 1000;
+            decimal valorSaque = 500;
+            Conta conta = new Conta(1111, saldoInicial);
+
+            //ação e verificação
+            Assert.ThrowsException<ArgumentException>(() => conta.Saque(valorSaque));
         }
 
     }
